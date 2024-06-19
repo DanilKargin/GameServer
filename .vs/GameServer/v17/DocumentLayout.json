@@ -1,0 +1,283 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\GameServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\controllers\\recordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\controllers\\recordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\models\\recordview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\models\\recordview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\models\\playerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\models\\playerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|c:\\users\\user\\source\\repos\\gameserver\\sharedlibrary\\models\\playerrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\models\\playerrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|c:\\users\\user\\source\\repos\\gameserver\\sharedlibrary\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\gameserver\\server\\models\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1907F47B-3F2A-4823-B0D5-D468CC1BEC46}|Server\\Server.csproj|solutionrelative:server\\models\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|c:\\users\\user\\source\\repos\\gameserver\\sharedlibrary\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|c:\\users\\user\\source\\repos\\gameserver\\sharedlibrary\\requests\\createplayerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\requests\\createplayerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|c:\\users\\user\\source\\repos\\gameserver\\sharedlibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6927BA-5AB2-42A5-A54D-08E9513D5076}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Server.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Server.csproj",
+              "RelativeDocumentMoniker": "Server\\Server.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Server.csproj",
+              "RelativeToolTip": "Server\\Server.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-18T23:32:11.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Controllers\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Controllers\\PlayerController.cs",
+              "RelativeToolTip": "Server\\Controllers\\PlayerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T16:25:20.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\Player.cs",
+              "RelativeToolTip": "SharedLibrary\\Models\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T14:47:37.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Services\\PlayerService.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\PlayerService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Services\\PlayerService.cs",
+              "RelativeToolTip": "Server\\Services\\PlayerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:23:33.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Server\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-07T16:29:05.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecordController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Controllers\\RecordController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\RecordController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Controllers\\RecordController.cs",
+              "RelativeToolTip": "Server\\Controllers\\RecordController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:23:02.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecordView.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Models\\RecordView.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\RecordView.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Models\\RecordView.cs",
+              "RelativeToolTip": "Server\\Models\\RecordView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:26:48.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Server\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwCgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:23:21.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerView.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Models\\PlayerView.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\PlayerView.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Models\\PlayerView.cs",
+              "RelativeToolTip": "Server\\Models\\PlayerView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T12:00:19.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T17:23:35.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "Server\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:30:01.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerRecord.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\PlayerRecord.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\Models\\PlayerRecord.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\PlayerRecord.cs",
+              "RelativeToolTip": "SharedLibrary\\Models\\PlayerRecord.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T20:18:41.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\User.cs",
+              "RelativeToolTip": "SharedLibrary\\Models\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T21:45:12.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Models\\Car.cs",
+              "RelativeToolTip": "SharedLibrary\\Models\\Car.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T20:08:51.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Models\\Settings.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\Settings.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\Server\\Models\\Settings.cs",
+              "RelativeToolTip": "Server\\Models\\Settings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T20:08:56.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreatePlayerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Requests\\CreatePlayerRequest.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\Requests\\CreatePlayerRequest.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\GameServer\\SharedLibrary\\Requests\\CreatePlayerRequest.cs",
+              "RelativeToolTip": "SharedLibrary\\Requests\\CreatePlayerRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:18:40.851Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

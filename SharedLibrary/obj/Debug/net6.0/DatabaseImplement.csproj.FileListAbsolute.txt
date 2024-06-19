@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.AssemblyInfo.cs
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\GameServer\SharedLibrary\bin\Debug\net6.0\DatabaseImplement.deps.json
+C:\Users\User\source\repos\GameServer\SharedLibrary\bin\Debug\net6.0\DatabaseImplement.runtimeconfig.json
+C:\Users\User\source\repos\GameServer\SharedLibrary\bin\Debug\net6.0\DatabaseImplement.dll
+C:\Users\User\source\repos\GameServer\SharedLibrary\bin\Debug\net6.0\DatabaseImplement.pdb
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.dll
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\refint\DatabaseImplement.dll
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.pdb
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\DatabaseImplement.genruntimeconfig.cache
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\ref\DatabaseImplement.dll
