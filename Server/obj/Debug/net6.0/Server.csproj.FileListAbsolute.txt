@@ -71,3 +71,4 @@ C:\Users\User\source\repos\GameServer\Server\obj\Debug\net6.0\Server.MvcApplicat
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\SharedLibrary.dll
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\SharedLibrary.pdb
+C:\Users\User\source\repos\GameServer\Server\obj\Debug\net6.0\Server.sourcelink.json

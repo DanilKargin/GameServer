@@ -9,7 +9,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-var settings = new Settings();
+
+var settings = new SettingsOption();
 builder.Configuration.Bind("Settings", settings);
 builder.Services.AddSingleton(settings);
 
@@ -20,7 +21,9 @@ builder.Services.AddControllers().AddNewtonsoftJson(o =>
 	o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
 });
 
+builder.Services.AddScoped<PlayerService>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(o =>
 {
 	o.TokenValidationParameters = new TokenValidationParameters()
@@ -38,7 +41,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+//Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
 //{
 //	app.UseSwagger();
@@ -46,8 +49,9 @@ var app = builder.Build();
 //}
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

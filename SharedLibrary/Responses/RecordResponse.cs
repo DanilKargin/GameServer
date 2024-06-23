@@ -1,8 +1,12 @@
-﻿using SharedLibrary.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Server.Models
+namespace SharedLibrary.Responses
 {
-	public class RecordView
+	public class RecordResponse
 	{
 		public int Id { get; set; }
 		public DateTime RecordDate { get; set; }

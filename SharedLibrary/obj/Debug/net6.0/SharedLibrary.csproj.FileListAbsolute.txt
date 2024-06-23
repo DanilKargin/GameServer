@@ -11,3 +11,4 @@ C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\SharedLibra
 C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\ref\SharedLibrary.dll
 C:\Users\User\source\repos\GameServer\SharedLibrary\bin\Debug\net6.0\SharedLibrary.runtimeconfig.json
 C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\SharedLibrary.genruntimeconfig.cache
+C:\Users\User\source\repos\GameServer\SharedLibrary\obj\Debug\net6.0\SharedLibrary.sourcelink.json

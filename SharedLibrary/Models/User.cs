@@ -14,18 +14,7 @@ namespace SharedLibrary.Models
         public int Id { get; set; }
         public string Login { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
-        public string Salt { get; set; } = string.Empty;
-        public List <Player> Players { get; set; }
-        public void Update(User user)
-        {
-            if (user == null)
-            {
-                return;
-            }
-            Login = user.Login;
-            PasswordHash = user.PasswordHash;
-            Salt = user.Salt;
-        }
-        
+		public string Salt { get; set; } = string.Empty;
+        public Player Player { get; set; }
     }
 }

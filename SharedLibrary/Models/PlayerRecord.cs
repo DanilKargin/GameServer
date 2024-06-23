@@ -16,15 +16,5 @@ namespace SharedLibrary.Models
         public string RideType { get; set; } = string.Empty;
         public int Score { get; set; }
         public Player Player { get; set; }
-
-        public void Update(PlayerRecord record)
-        {
-            if(record == null)
-            {
-                return;
-            }
-            RecordDate = record.RecordDate;
-            Score = record.Score;
-        }
     }
 }

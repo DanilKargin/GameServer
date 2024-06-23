@@ -2,56 +2,50 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Server.Services;
 using SharedLibrary;
 using SharedLibrary.Models;
-using SharedLibrary.Requests;
+using SharedLibrary.Requests.Player;
 
 namespace Server.Controllers
 {
-	[Authorize]
+    [Authorize]
     [ApiController]
 	[Route("[controller]")]
 	public class PlayerController : ControllerBase
 	{
-		private readonly ILogger<PlayerController> _logger;
-		private readonly GameDBContext _context;
-		public PlayerController(ILogger<PlayerController> logger, GameDBContext context)
+		private readonly PlayerService _playerService;
+		public PlayerController(GameDBContext context, PlayerService playerService)
 		{
-			_logger = logger;
-			_context = context;
+			_playerService = playerService;
 		}
-
-		[HttpPost("{id}")]
-		public IActionResult Edit([FromRoute] int id, [FromBody] CreatePlayerRequest request)
+		[HttpGet]
+		public IActionResult Get() 
 		{
-			var playerIsAvailable = JsonConvert.DeserializeObject<List<int>>(User.FindFirst("players").Value);
-			if (!playerIsAvailable.Contains(id))
-				return Unauthorized();
-            var player = _context.Players.First(x => x.Id == id);
-			player.Nickname = request.Nickname;
-			_context.SaveChanges();
-			return Ok();
+			var playerId = int.Parse(User.FindFirst("playerId").Value);
+			var player = _playerService.GetPlayer(new PlayerRequest() { Id = playerId });
+			return Ok(_playerService.GetPlayer(new PlayerRequest() { Id = playerId }));
 		}
-		[HttpPost]
-		public Player Create(CreatePlayerRequest request)
+		[HttpPost("addcar")]
+		public IActionResult EditCarList(CarRequest request)
 		{
-			var userId = int.Parse(User.FindFirst("id").Value);
-
-			var user = _context.Users.Include(u => u.Players).First(u => u.Id == userId);
-			var startCar = _context.Cars.First(c => c.Name.Contains("Starter"));
-			var player = new Player()
+			var playerId = int.Parse(User.FindFirst("playerId").Value);
+			var (success, content) = _playerService.AddCar(playerId, request.Id);
+			if (success)
 			{
-				Nickname = request.Nickname,
-				Currency = 1000,
-				User = user,
-				Cars = new List<Car>() { startCar }
-			};
-			_context.Add(player);
-			_context.SaveChanges();
+				return Ok();
+			}
+			else
+			{
+				return BadRequest(content);
+			}
 
-			player.User = null;
-
-			return player;
+		}
+		[HttpPost("edit")]
+		public IActionResult Edit(PlayerRequest request)
+		{
+			request.Id = int.Parse(User.FindFirst("playerId").Value);
+			return Ok(_playerService.EditPlayer(request));
 		}
 	}
 }
