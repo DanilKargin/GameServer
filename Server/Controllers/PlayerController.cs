@@ -6,6 +6,7 @@ using Server.Services;
 using SharedLibrary;
 using SharedLibrary.Models;
 using SharedLibrary.Requests.Player;
+using SharedLibrary.Responses;
 
 namespace Server.Controllers
 {
@@ -19,12 +20,11 @@ namespace Server.Controllers
 		{
 			_playerService = playerService;
 		}
-		[HttpGet]
-		public IActionResult Get() 
+		[HttpGet("get")]
+		public PlayerResponse Get() 
 		{
 			var playerId = int.Parse(User.FindFirst("playerId").Value);
-			var player = _playerService.GetPlayer(new PlayerRequest() { Id = playerId });
-			return Ok(_playerService.GetPlayer(new PlayerRequest() { Id = playerId }));
+			return _playerService.GetPlayer(new PlayerRequest() { Id = playerId });
 		}
 		[HttpPost("addcar")]
 		public IActionResult EditCarList(CarRequest request)
@@ -42,10 +42,10 @@ namespace Server.Controllers
 
 		}
 		[HttpPost("edit")]
-		public IActionResult Edit(PlayerRequest request)
+		public PlayerResponse Edit(PlayerRequest request)
 		{
 			request.Id = int.Parse(User.FindFirst("playerId").Value);
-			return Ok(_playerService.EditPlayer(request));
+			return _playerService.EditPlayer(request);
 		}
 	}
 }

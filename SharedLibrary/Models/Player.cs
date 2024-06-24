@@ -14,6 +14,7 @@ namespace SharedLibrary.Models
         public List<Car> Cars { get; set; }
 		public List<PlayerRecord> Records { get; set; }
 
+
         public PlayerResponse GetPlayer()
 		{
 			return new PlayerResponse()

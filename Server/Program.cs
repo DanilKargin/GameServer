@@ -15,7 +15,9 @@ builder.Configuration.Bind("Settings", settings);
 builder.Services.AddSingleton(settings);
 
 // Add services to the container.
-builder.Services.AddDbContext<GameDBContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
+builder.Services.AddDbContext<GameDBContext>(o => 
+	o.UseMySql(builder.Configuration.GetConnectionString("Db"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("Db"))));
+
 builder.Services.AddControllers().AddNewtonsoftJson(o =>
 {
 	o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;

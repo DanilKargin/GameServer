@@ -16,14 +16,15 @@ namespace Server.Services
 			_context = context;
 		}
 
-		public Player CreateNewPlayer()
+		public Player CreateNewPlayer(string nickname)
 		{
-			var startCar = _context.Cars.FirstOrDefault(c => c.Name.Contains("Starter"));
+			var startCar = _context.Cars.FirstOrDefault(c => c.Name.Contains("Mini"));
 			var player = new Player()
 			{
 				Currency = 1000,
-				//Cars = new List<Car>() { startCar },
-				Records = new List<PlayerRecord>()
+				Cars = new List<Car>() { startCar },
+				Records = new List<PlayerRecord>(),
+				Nickname = nickname
 			};
 			_context.Add(player);
 			_context.SaveChanges();
