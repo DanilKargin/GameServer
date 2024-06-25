@@ -21,15 +21,15 @@ namespace Server.Controllers
 		}
 
 		[HttpGet("vkauth")]
-		public IActionResult VkAuthentication(string code)
+		public AuthenticationResponse VkAuthentication(string code)
 		{
 			if (string.IsNullOrEmpty(code))
 			{
-				return BadRequest("Error receiving the code");
+				return null;
 			}
 			else
 			{
-				return Ok(_authService.LoginWithVK(code));
+				return new AuthenticationResponse() { Token = _authService.LoginWithVK(code).Result.content};
 			}
 		}
 	}

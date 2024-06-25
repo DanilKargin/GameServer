@@ -30,14 +30,15 @@ namespace Server.Services
 		public async Task<(bool success, string content)> LoginWithVK(string code)
 		{
 			string url = "https://oauth.vk.com/access_token?client_id=" + _settings.AppId + "&client_secret=" + _settings.SecretKey + "&redirect_uri=" + _settings.RedirectUri + "&code=" + code;
-			string urlGetProfileInfo = "https://api.vk.com/method/account.getProfileInfo";
+			string urlGetProfileInfo = "https://api.vk.com/method/account.getProfileInfo?v=5.131";
 
 			HttpClient httpClient = new HttpClient();
 			var result = await httpClient.GetFromJsonAsync<VkTokenResponse>(url);
+
 			httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.access_token);
 
-			var profile_info = await httpClient.GetFromJsonAsync<VkProfileResponse>(urlGetProfileInfo);
-			string nickname = profile_info.last_name + " " + profile_info.first_name;
+			var profile_info = await httpClient.GetFromJsonAsync<Response>(urlGetProfileInfo);
+			string nickname = profile_info.response.last_name + " " + profile_info.response.first_name;
 
 			if(result == null)
 			{

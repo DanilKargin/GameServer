@@ -61,15 +61,6 @@ C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Microsoft.AspNetCo
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\SharedLibrary.dll
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\SharedLibrary.pdb
 C:\Users\User\source\repos\GameServer\Server\obj\Debug\net6.0\Server.sourcelink.json
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\BouncyCastle.Crypto.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Google.Protobuf.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\K4os.Compression.LZ4.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\K4os.Hash.xxHash.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\MySql.Data.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Ubiety.Dns.Core.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\ZstdNet.dll
-C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\User\source\repos\GameServer\Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
