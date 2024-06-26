@@ -2,7 +2,8 @@
 
 namespace SharedLibrary.Requests.Player
 {
-    public class PlayerRequest
+	[System.Serializable]
+	public class PlayerRequest
     {
         public int Id;
         public string Nickname;

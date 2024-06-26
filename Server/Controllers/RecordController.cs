@@ -14,7 +14,6 @@ using System.Globalization;
 
 namespace Server.Controllers
 {
-	[Authorize]
 	[ApiController]
 	[Route("[controller]")]
 	public class RecordController : ControllerBase
@@ -26,20 +25,20 @@ namespace Server.Controllers
 			_context = context;
 			_playerService = playerService;
 		}
-		[HttpPost("edit")]
-		public IActionResult EditPlayerRecord([FromBody] RecordRequest request)
-		{
-			var user = int.Parse(User.FindFirst("id").Value);
+		//[HttpPost("edit")]
+		//public IActionResult EditPlayerRecord([FromBody] RecordRequest request)
+		//{
+		//	var user = int.Parse(User.FindFirst("id").Value);
 
-			_playerService.UpdateRecord(_context.Users.Include(u => u.Player).FirstOrDefault(u => u.Id == user).Player.Id, request.RideType, request.Score);
-			return Ok();
-		}
+		//	_playerService.UpdateRecord(_context.Users.Include(u => u.Player).FirstOrDefault(u => u.Id == user).Player.Id, request.RideType, request.Score);
+		//	return Ok();
+		//}
 
 		[HttpGet("getday")]
 		public List<RecordResponse> GetDayRecords()
 		{
 			var date = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 0, 0, 0);
-			List<RecordResponse> records = _context.PlayerRecords.Include(u => u.Player).Where(u => date < u.RecordDate).OrderBy(u => u.Score).Select(x => new RecordResponse()
+			List<RecordResponse> records = _context.PlayerRecords.Include(u => u.Player).Where(u => date < u.RecordDate).OrderByDescending(u => u.Score).Select(x => new RecordResponse()
 			{
 				Id = x.Id,
 				PlayerName = x.Player.Nickname,
@@ -60,7 +59,7 @@ namespace Server.Controllers
 			}
 
 			var date2 = new DateTime(date.Year, date.Month, date.Day, 0, 0, 0);
-			List<RecordResponse> records = _context.PlayerRecords.Include(u => u.Player).Where(u => date < u.RecordDate).OrderBy(u => u.Score).Select(x => new RecordResponse()
+			List<RecordResponse> records = _context.PlayerRecords.Include(u => u.Player).Where(u => date < u.RecordDate).OrderByDescending(u => u.Score).Select(x => new RecordResponse()
 			{
 				Id = x.Id,
 				PlayerName = x.Player.Nickname,
@@ -75,7 +74,7 @@ namespace Server.Controllers
 		public List<RecordResponse> GetMonthRecords()
 		{
 			var date = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1, 0, 0, 0);
-			List<RecordResponse> records = _context.PlayerRecords.Include(u => u.Player).Where(u => date < u.RecordDate).OrderBy(u => u.Score).Select(x => new RecordResponse()
+			List<RecordResponse> records = _context.PlayerRecords.Include(u => u.Player).Where(u => date < u.RecordDate).OrderByDescending(u => u.Score).Select(x => new RecordResponse()
 			{
 				Id = x.Id,
 				PlayerName = x.Player.Nickname,

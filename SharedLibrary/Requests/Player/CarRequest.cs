@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharedLibrary.Requests.Player
 {
+	[System.Serializable]
 	public class CarRequest
 	{
 		public int Id;

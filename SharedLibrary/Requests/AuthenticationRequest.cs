@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseImplement.Requests
 {
+	[System.Serializable]
 	public class AuthenticationRequest
 	{
 		public string Login { get; set; }

@@ -1,6 +1,7 @@
 ﻿using DatabaseImplement.Requests;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using Server.Services;
 using SharedLibrary.Requests;
 using SharedLibrary.Responses;
@@ -19,17 +20,42 @@ namespace Server.Controllers
 		{
 			_authService = authService;
 		}
-
-		[HttpGet("vkauth")]
-		public AuthenticationResponse VkAuthentication(string code)
+		[HttpGet("login")]
+		public string Login(string _login, string _password)
 		{
-			if (string.IsNullOrEmpty(code))
+			var login = _authService.Login(_login, _password);
+			if (!login.success)
+			{
+				return  null;
+			}
+			return login.token;
+		}
+		[HttpGet("register")]
+		public AuthenticationResponse Register(string login, string password)
+		{
+			var register = _authService.Register(login, password);
+			if (!register.success)
 			{
 				return null;
 			}
 			else
 			{
-				return new AuthenticationResponse() { Token = _authService.LoginWithVK(code).Result.content};
+				return new AuthenticationResponse() { Token = _authService.Login(login, password).token };
+			}
+
+		}
+
+
+		[HttpGet("vkauth")]
+		public AuthenticationResponse VkAuthentication(string access_token, string user_id, string email)
+		{
+			if (string.IsNullOrEmpty(access_token))
+			{
+				return null;
+			}
+			else
+			{
+				return new AuthenticationResponse() { Token = _authService.LoginWithVK(access_token, int.Parse(user_id), email).Result.content};
 			}
 		}
 	}

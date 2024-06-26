@@ -41,11 +41,11 @@ namespace Server.Controllers
 			}
 
 		}
-		[HttpPost("edit")]
-		public PlayerResponse Edit(PlayerRequest request)
+		[HttpGet("edit")]
+		public PlayerResponse Edit(string nickname, string cash)
 		{
-			request.Id = int.Parse(User.FindFirst("playerId").Value);
-			return _playerService.EditPlayer(request);
+			int Id = int.Parse(User.FindFirst("playerId").Value);
+			return _playerService.EditPlayer(new PlayerRequest() { Id = Id, Currency = cash, Nickname = nickname });
 		}
 	}
 }

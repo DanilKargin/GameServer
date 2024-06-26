@@ -10,7 +10,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
-using static System.Net.WebRequestMethods;
 
 namespace Server.Services
 {
@@ -27,37 +26,31 @@ namespace Server.Services
 			_playerService = playerService;
 		}
 
-		public async Task<(bool success, string content)> LoginWithVK(string code)
+		public async Task<(bool success, string content)> LoginWithVK(string code, int user_id, string email)
 		{
-			string url = "https://oauth.vk.com/access_token?client_id=" + _settings.AppId + "&client_secret=" + _settings.SecretKey + "&redirect_uri=" + _settings.RedirectUri + "&code=" + code;
 			string urlGetProfileInfo = "https://api.vk.com/method/account.getProfileInfo?v=5.131";
 
 			HttpClient httpClient = new HttpClient();
-			var result = await httpClient.GetFromJsonAsync<VkTokenResponse>(url);
+			
+			//httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", code);
 
-			httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.access_token);
+			//var profile_info = await httpClient.GetFromJsonAsync<Response>(urlGetProfileInfo);
+			//string nickname = profile_info.response.last_name + " " + profile_info.response.first_name;
 
-			var profile_info = await httpClient.GetFromJsonAsync<Response>(urlGetProfileInfo);
-			string nickname = profile_info.response.last_name + " " + profile_info.response.first_name;
-
-			if(result == null)
+			if(!Register(email, user_id.ToString()).success)
 			{
-				return (false, "Vk token invalid");
-			}
-			if(!Register(result.email, result.user_id.ToString(), nickname).success)
-			{
-				return Login(result.email, result.user_id.ToString());
+				return Login(email, user_id.ToString());
 			}
 			return (false, "?");
 			
 		}
 
-		public (bool success, string content) Register(string login, string password, string nickname)
+		public (bool success, string content) Register(string login, string password)
 		{
 			if (_context.Users.Include(u => u.Player).Any(u => u.Login == login))
 				return (false, "Login not available");
 
-			var player = _playerService.CreateNewPlayer(nickname);
+			var player = _playerService.CreateNewPlayer();
 			var user = new User { Login = login, PasswordHash = password, Player = player };
 			user.ProvideSaltAndHash();
 
@@ -105,8 +98,8 @@ namespace Server.Services
 	}
 	public interface IAuthenticationService
 	{
-		public Task<(bool success, string content)> LoginWithVK(string code);
-		(bool success, string content) Register(string login, string password, string nickname);
+		public Task<(bool success, string content)> LoginWithVK(string code, int user_id, string email);
+		(bool success, string content) Register(string login, string password);
 		(bool success, string token) Login(string login, string password);
 	}
 }

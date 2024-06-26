@@ -17,13 +17,18 @@ namespace SharedLibrary.Models
 
         public PlayerResponse GetPlayer()
 		{
+			Dictionary<string, int> dict = new Dictionary<string, int>();
+			foreach (var item in Records)
+			{
+				dict.Add(item.RideType, item.Score);
+			}
 			return new PlayerResponse()
 			{
 				Id = Id,
 				Nickname = Nickname,
 				Currency = Currency,
-				Cars = Cars,
-				Records = Records
+				Cars = Cars.Select(x => x.Id).ToList(),
+				Records = dict
 			};
 		}
     }

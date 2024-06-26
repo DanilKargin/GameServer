@@ -12,7 +12,7 @@ namespace SharedLibrary.Responses
 		public int Id;
 		public string Nickname { get; set; } = string.Empty;
 		public int Currency { get; set; }
-		public List<Car> Cars { get; set; }
-		public List<PlayerRecord> Records { get; set; }
+		public List<int> Cars { get; set; }
+		public Dictionary<string, int> Records { get; set; }
 	}
 }
