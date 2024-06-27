@@ -21,14 +21,14 @@ namespace Server.Controllers
 			_authService = authService;
 		}
 		[HttpGet("login")]
-		public string Login(string _login, string _password)
+		public AuthenticationResponse Login(string _login, string _password)
 		{
 			var login = _authService.Login(_login, _password);
 			if (!login.success)
 			{
-				return  null;
+				return new AuthenticationResponse() { Token = null, ErrorMessage = login.token };
 			}
-			return login.token;
+			return new AuthenticationResponse() { Token = login.token };
 		}
 		[HttpGet("register")]
 		public AuthenticationResponse Register(string login, string password)
@@ -36,7 +36,7 @@ namespace Server.Controllers
 			var register = _authService.Register(login, password);
 			if (!register.success)
 			{
-				return null;
+				return new AuthenticationResponse() { Token = null, ErrorMessage = register.content};
 			}
 			else
 			{
@@ -45,13 +45,12 @@ namespace Server.Controllers
 
 		}
 
-
 		[HttpGet("vkauth")]
 		public AuthenticationResponse VkAuthentication(string access_token, string user_id, string email)
 		{
 			if (string.IsNullOrEmpty(access_token))
 			{
-				return null;
+				return new AuthenticationResponse() { Token = null, ErrorMessage = "Invalid token!" };
 			}
 			else
 			{

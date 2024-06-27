@@ -25,7 +25,8 @@ namespace Server.Services
 				Cars = new List<Car>() { startCar },
 				Records = new List<PlayerRecord>()
 			};
-			player.Nickname = "Username" + player.Id;
+			Random rand = new Random();
+			player.Nickname = "Racer" + rand.Next(10000, 1000000);
 			_context.Add(player);
 			_context.SaveChanges();
 

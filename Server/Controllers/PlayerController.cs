@@ -16,7 +16,7 @@ namespace Server.Controllers
 	public class PlayerController : ControllerBase
 	{
 		private readonly PlayerService _playerService;
-		public PlayerController(GameDBContext context, PlayerService playerService)
+		public PlayerController(PlayerService playerService)
 		{
 			_playerService = playerService;
 		}
@@ -26,26 +26,24 @@ namespace Server.Controllers
 			var playerId = int.Parse(User.FindFirst("playerId").Value);
 			return _playerService.GetPlayer(new PlayerRequest() { Id = playerId });
 		}
-		[HttpPost("addcar")]
-		public IActionResult EditCarList(CarRequest request)
+		[HttpGet("addcar")]
+		public bool EditCarList(int id)
 		{
 			var playerId = int.Parse(User.FindFirst("playerId").Value);
-			var (success, content) = _playerService.AddCar(playerId, request.Id);
-			if (success)
-			{
-				return Ok();
-			}
-			else
-			{
-				return BadRequest(content);
-			}
-
+			var (success, content) = _playerService.AddCar(playerId, id);
+			return success;
 		}
 		[HttpGet("edit")]
 		public PlayerResponse Edit(string nickname, string cash)
 		{
 			int Id = int.Parse(User.FindFirst("playerId").Value);
 			return _playerService.EditPlayer(new PlayerRequest() { Id = Id, Currency = cash, Nickname = nickname });
+		}
+		[HttpGet("recordedit")]
+		public bool EditRecord(string type, int score)
+		{
+			int Id = int.Parse(User.FindFirst("playerId").Value);
+			return _playerService.UpdateRecord(Id, type, score).success;
 		}
 	}
 }
